@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <a href="/"> home </a> </h1>
+    <h1>this is home page </h1>
+    <h2>name :{{author}}</h2>
+    <h2>Age:{{age}}</h2>
+    <h2>{{list}}</h2>
+
+ 
+    {% if age >= 20 %}
+        <h4>siam is a boy </h4>
+    {% elif age >= 18 %}
+         <h4> he is an child  </h4>
+    {% else %}
+        <h4>he is not </h4>
+    {% endif %}
+
+    {% comment %} for loop {% endcomment %}
+    {% for i in courses%}
+    <h1>{{i.id}} {{i.name}} {{i.fee}}</h1>
+    {%endfor%}
+
+</body>
+</html>
